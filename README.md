@@ -2,13 +2,9 @@
 
 - **Check demo [LINK](https://youtu.be/ovbGxW-DNbw)**
 
-**Commands**
-- To build image:
-  ```
-  docker build -t princebansal7/backend-docker-k8s .
-  ```
-- To run container:
-  ```
+**Command to run it locally**
+
+  ```sh
   docker run -p 3000:3000 princebansal7/backend-docker-k8s
   ```
 
