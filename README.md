@@ -1,5 +1,7 @@
 # This is project will deployed on Kubernetes with CI/CD in place
 
+- **Check demo [LINK](https://youtu.be/ovbGxW-DNbw)**
+
 **Commands**
 - To build image:
   ```
