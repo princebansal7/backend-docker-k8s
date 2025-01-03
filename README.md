@@ -7,7 +7,7 @@
 **Command to run it locally**
 
   ```sh
-  docker run -p 3000:3000 princebansal7/backend-docker-k8s:v1.0.0
+  docker run -p 3000:3000 princebansal7/backend-docker-k8s:v3.0.0
   ```
 
 
