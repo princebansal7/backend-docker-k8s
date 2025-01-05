@@ -1,7 +1,8 @@
 # JS Backend for Docker & K8s
 
-#### Check DEMO-1 (had issue with image architecture)- [LINK](https://youtu.be/KEh9ar2dBjw)
-#### Check DEMO-2 (fixed issues and deployed)- [LINK](https://youtu.be/7B2Lmhj8_w8)
+Check DEMO-1 (had issue with image architecture) - [LINK](https://youtu.be/KEh9ar2dBjw)
+
+Check DEMO-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
 
 <hr>
 
