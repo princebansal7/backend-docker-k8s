@@ -1,21 +1,21 @@
 # JS Backend for Docker & K8s
 
-Check demo-1 (had issue with image architecture) - [LINK](https://youtu.be/KEh9ar2dBjw)
+###### watch in 1.5x speed
+- Check demo-1 (had issue with image architecture) - [LINK](https://youtu.be/KEh9ar2dBjw)
+- Check demo-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
 
-Check demo-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
-
-(watch in 1.75x speed)
 <hr>
+
 **Command to run it locally**
 
-  ```sh 
-  docker run -p 3000:3000 princebansal7/api-backend:v1
+  ```sh
+  docker run --rm -p 3000:3000 princebansal7/api-backend:v1
   ```
 
 **Endpoints for testing:**
 
 - Get Sum of 2 numbers
-  - GET request: `localhost/sum?a=10&b=20`
+  - `localhost:3000/sum?a=10&b=20`
     ```json
     {
         "sum": 30
@@ -23,7 +23,7 @@ Check demo-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
     ```
 
 - Get simple interest 
-  - GET request: `localhost/si?p=1000&r=2&t=5`
+  - `localhost:3000/si?p=1000&r=2&t=5`
     ```json
     {
         "simpleInterest": 100,
@@ -31,7 +31,7 @@ Check demo-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
     }
     ```
 - Get todos by id
-  - GET request: `localhost/todo/7`
+  - `localhost:3000/todo/7`
     ```json
     {
         "id": 7,
@@ -42,7 +42,7 @@ Check demo-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
     ```
 
 - Get random todos (min: 1, max: 20)
-  - GET request: `localhost/todos`
+  - `localhost:3000/todos`
     ```json
     {
         "todos": [
