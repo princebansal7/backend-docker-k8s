@@ -6,6 +6,7 @@ dotenv.config();
 const port = process.env.PORT || 3000;
 
 app.use(cors());
+app.use(express.static("public"));
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -30,11 +31,7 @@ function generateTodos() {
 }
 
 app.get("/", (req, res) => {
-    res.send(`
-        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-            <h1>Welcome to Prince Bansal's Server!</h1>
-        </div>
-    `);
+    res.sendFile("index.html", { root: "public" });
 });
 
 app.get("/todos", (req, res) => {
@@ -83,5 +80,5 @@ app.get("/si", function (req, res) {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on ${port}`);
+    console.log(`Server is running on \nhttp://localhost:${port}`);
 });

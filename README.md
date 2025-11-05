@@ -6,13 +6,11 @@ Check demo-2 (fixed issues and deployed) - [LINK](https://youtu.be/7B2Lmhj8_w8)
 
 (watch in 1.75x speed)
 <hr>
-
 **Command to run it locally**
 
-  ```sh
-  docker run -p 3000:3000 princebansal7/backend-docker-k8s:amd-arm-v4.0.2
+  ```sh 
+  docker run -p 3000:3000 princebansal7/api-backend:v1
   ```
-
 
 **Endpoints for testing:**
 

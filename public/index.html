@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prince Bansal's Server</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #4568dc 0%, #b06ab3 100%);
+                min-height: 100vh;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                padding: 20px;
+            }
+            h1 {
+                color: #ffffff;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 2.5em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .endpoints {
+                background: rgba(255, 255, 255, 0.95);
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 8px 32px rgba(31, 38, 135, 0.25);
+                backdrop-filter: blur(4px);
+                width: 90%;
+                max-width: 600px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+            }
+            .endpoint-link {
+                display: block;
+                padding: 15px;
+                margin: 10px 0;
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                color: #4568dc;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                border: 1px solid rgba(69, 104, 220, 0.1);
+            }
+            .endpoint-link:hover {
+                background: rgba(69, 104, 220, 0.1);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 16px rgba(31, 38, 135, 0.15);
+                border: 1px solid rgba(69, 104, 220, 0.3);
+            }
+            .endpoint-description {
+                color: #6a6f95;
+                font-size: 0.9em;
+                margin-top: 5px;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 40px;
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 0.9em;
+            }
+            .footer a {
+                color: rgba(255, 255, 255, 0.9);
+                text-decoration: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                transition: all 0.3s ease;
+            }
+            .footer a:hover {
+                color: #ffffff;
+                border-bottom-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Prince Bansal's Server!</h1>
+            <div class="endpoints">
+                <a href="/" target="_blank" class="endpoint-link">
+                    /
+                    <div class="endpoint-description">Home page</div>
+                </a>
+                <a href="/todos" target="_blank" class="endpoint-link">
+                    /todos
+                    <div class="endpoint-description">
+                        Get a list of random todos
+                    </div>
+                </a>
+                <a href="/todo/7" target="_blank" class="endpoint-link">
+                    /todo/7
+                    <div class="endpoint-description">
+                        Get a specific todo by ID
+                    </div>
+                </a>
+                <a href="/sum?a=10&b=20" target="_blank" class="endpoint-link">
+                    /sum?a=10&b=20
+                    <div class="endpoint-description">
+                        Calculate sum of two numbers
+                    </div>
+                </a>
+                <a
+                    href="/si?p=1000&r=2&t=5"
+                    target="_blank"
+                    class="endpoint-link"
+                >
+                    /si?p=1000&r=2&t=5
+                    <div class="endpoint-description">
+                        Calculate Simple Interest
+                    </div>
+                </a>
+            </div>
+            <div class="footer">
+                ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                ·
+                <a href="https://princebansal.in" target="_blank"
+                    >princebansal.in</a
+                >
+            </div>
+        </div>
+    </body>
+</html>
